@@ -1,0 +1,31 @@
+Markus Beamer
+Craps Assignment Psudeocode
+
+
+The first thing I want to do is create a set of ints that track wins losses and point
+	-int wins
+	-int losses
+	-int point
+	-int roundCounter
+And a boolean that checks to see if the first roll is correct and moves on to subsequent roll
+	-boolean sRolls (subsequent rolls)
+Then add an array that holds the messages
+	-ArrayList msg
+
+In our main program loop it will run of 2 nested loops the first and it will keep track of how many overall rounds has happened by moving roundCounter up by 1
+	roundCounter++
+The first loop is the round start
+	-int die1/2
+	-a way to send whats currently happening into our msg ArrayList for pringing later
+	-if statement that checks win condition
+	-else if statement that checks lose condition
+	-else statement that moves on to our second loop if one of the two are not met with boolean statement
+	-both if statements add to the arraylist about the current condition
+The second loop is our subsequent rolls
+	-running off the boolean sRolls var
+	-recreating both die1/die2
+	-if statement that checks the die and compare with the point/7
+	-win/lose conditions are both created off of that
+outside of our first two loops we have one more for loop that prints out the messages it collected 10 times
+print out the total wins and total losses
+	
